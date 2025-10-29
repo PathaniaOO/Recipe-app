@@ -57,7 +57,7 @@ export default function Home() {
 
   // navigate to recipes with query param
   function submitSearch(q = query) {
-    if (!q || !q.trim()) return;
+    if (!q || !q.trim()) return;vv
     const clean = q.trim();
     // update recent search list
     const next = [clean, ...recent.filter(r => r.toLowerCase() !== clean.toLowerCase())].slice(0, 6);
